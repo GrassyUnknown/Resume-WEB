@@ -3,30 +3,26 @@ export default {
         title: "你好，我是",
         me: [
             "张子杰",
-            "西安交通大学少年班学生",
-            "前端狂热粉"
+            "ZiJie Zhang",
+            "西安交通大学少年班学生"
         ],
         bg: "./images/bg.jpg",
-        subTitle: "即使前方的路看似绝境，也要有硬生生给自己开出一条路的勇气",
-        contact: [{
-                name: "Blog",
-                icon: "fa-wordpress",
-                link: "https://blog.n0ts.top/"
-            },
+        subTitle: "深山踏红叶，耳畔闻鹿鸣",
+        contact: [
             {
                 name: "Email",
                 icon: "fa-envelope",
-                link: "mailto:mail@n0ts.top"
+                link: "mailto:zhangzijie.xjtu@outlook.com"
             },
             {
-                name: "Gitee",
+                name: "Github",
                 icon: "fa-github",
-                link: "https://gitee.com/n0ts"
+                link: "https://github.com/GrassyUnknown"
             },
             {
                 name: "QQ",
                 icon: "fa-qq",
-                link: "https://wpa.qq.com/msgrd?v=3&uin=1656071287&site=qq&menu=yes"
+                link: "https://wpa.qq.com/msgrd?v=3&uin=2964918174&site=qq&menu=yes"
             }
         ],
         loadMore: {
@@ -38,7 +34,7 @@ export default {
         title: "关于我",
         laozi: {
             img: "./images/me.jpg",
-            content: "<span></span>我是<b>张子杰</b>，18岁，<b>西安交通大学软件工程专业</b>2021级在读生<br /><span></span>曾获<b>蓝桥杯国赛二等奖</b>，<b>ICPC陕西省赛银奖</b>，<b>全国大学生软件测试大赛二等奖</b>，在学校中获得过<b>校级二等奖学金</b>，<b>优秀学生</b>，<b>网络管理协会优秀社员</b>等荣誉。"
+            content: "<span></span>我是<b>张子杰</b>，18岁，<b>西安交通大学软件工程专业</b>2021级在读学生<br /><span></span>曾获<b>蓝桥杯国赛二等奖</b>，<b>ICPC陕西省赛银奖</b>，<b>全国大学生软件测试大赛二等奖</b>等奖项，也曾获得过<b>校级二等奖学金</b>，<b>优秀学生</b>，<b>网络管理协会优秀社员</b>等荣誉。"
         },
         ability: [{
                 icon: "fa-html5",
@@ -63,10 +59,10 @@ export default {
             },
             {
                 icon: "fa-photo",
-                title: "前端",
+                title: "前后端",
                 subTitle: "",
                 color: "#2ed573",
-                bfb: "70%"
+                bfb: "80%"
             }
         ],
         loadMore: {
