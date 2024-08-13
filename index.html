@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 - 张子杰</title>
+    <meta name="keywords" content="关键词">
+    <meta name="description" content="介绍">
+    <link rel="icon" href="./favicon.ico">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.9.0/viewer.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.1/theme-chalk/index.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/resume.css">
+</head>
+
+<body>
+    <div id="resume" v-if="resume" v-cloak>
+        <!-- 首页 -->
+        <div class="resume resume1">
+            <!-- 内容 -->
+            <div class="resumeContent resume1Content">
+                <div>
+                    <div class="ContentTitle">
+                        <span>{{resume.index.title}}</span>
+                        <span class="resume1Typet"></span>
+                    </div>
+                    <div class="ContentSubTitle">{{resume.index.subTitle}}</div>
+                    <ul class="ContentContact">
+                        <li v-for="(item, index) in resume.index.contact" :key="index">
+                            <a :href="item.link" target="_blank">
+                                <el-tooltip :content="item.name" placement="bottom" effect="light">
+                                    <i :class="'fa ' + item.icon"></i>
+                                </el-tooltip>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="resume1LoadMore">
+                        <div class="loadMore" @click="scrollGoTo(resume.index.loadMore.class)">
+                            {{resume.index.loadMore.text}}</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 壁纸 -->
+            <div class="resumeBg resume1Bg"></div>
+        </div>
+        <!-- 个人简介 -->
+        <div class="resume resume2">
+            <!-- 内容 -->
+            <div class="resumeContent resume2Content">
+                <div>
+                    <p class="resume2ContentTitle">{{resume.about.title}}</p>
+                    <div class="resume2ContentMe">
+                        <div class="resume2ContentImg">
+                            <img :src="resume.about.laozi.img" :alt="resume.about.laozi.img">
+                        </div>
+                        <div class="resume2ContentText">
+                            <div v-html="resume.about.laozi.content" class="resume2ContentTextBox"></div>
+                            <ul>
+                                <li v-for="(item, index) in resume.about.ability"
+                                    :style="'border-top: 5px solid ' + item.color">
+                                    <i :class="'fa ' + item.icon "></i>
+                                    <span :style="'color:' + item.color">{{item.bfb}}</span>
+                                    <p>{{item.title}}</p>
+                                    <p>{{item.subTitle}}</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume2LoadMore">
+                        <div class="loadMore" @click="scrollGoTo(resume.about.loadMore.class)">
+                            {{resume.about.loadMore.text}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 项目介绍 -->
+        <div class="resume resume3">
+            <div class="resumeContent resume3Content">
+                <div>
+                    <p class="resume2ContentTitle">{{resume.project.title}}</p>
+                    <div class="resume3ContentList">
+                        <div class="resume3ContentBox" v-for="(item, index) in resume.project.list" :key="index">
+                            <img :src="item.img" :alt="item.img">
+                            <div class="resume3ContentBoxText">
+                                <div>
+                                    <p class="resume3ContentTitle">{{item.name}}</p>
+                                    <ul>
+                                        <li v-for="(nb, index) in item.nb" :key="index">
+                                            {{nb}}
+                                            <span v-if="index != item.nb.length - 1">+</span>
+                                        </li>
+                                    </ul>
+                                    <p class="resume3ContentText">{{item.text}}</p>
+                                    <div class="resume3ContentBtn" @click="showProject(index)">
+                                        {{resume.project.listLoadMore}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resume3ContentBoxTc"></div>
+                        <div class="resume3ContentBoxTc"></div>
+                    </div>
+                    <div class="resume3LoadMore">
+                        <div class="loadMore" @click="scrollGoTo(resume.project.loadMore.class)">
+                            {{resume.project.loadMore.text}}</div>
+                    </div>
+                </div>
+            </div>
+            <el-dialog :title="resume.project.list[projectIndex].name" :visible.sync="projectDialog"
+                append-to-body="true" modal-append-to-body="true">
+                <a :href="resume.project.list[projectIndex].url" class="resume3ContentBtn" target="_blank">点我查看</a>
+                <div v-html="resume.project.list[projectIndex].content"></div>
+            </el-dialog>
+        </div>
+        <!-- 联系我 -->
+        <div class="resume resume4">
+            <!-- 壁纸 -->
+            <div class="resumeBg resume4Bg"></div>
+            <!-- 内容 -->
+            <div class="resumeContent resume4Content">
+                <div>
+                    <p class="resume2ContentTitle">{{resume.contact.title}}</p>
+                    <ul>
+                        <li v-for="(item, index) in resume.contact.list">
+                            <p class="resume4ItemTitle">{{item.name}}</p>
+                            <p class="resume4ItemContext">{{item.context}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js 引用 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/viewerjs/1.9.0/viewer.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.9/vue.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/element-ui/2.15.1/index.min.js"></script>
+    <script src="./js/resume.js" type="module"></script>
+</body>
+
+</html>
