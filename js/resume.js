@@ -1,14 +1,14 @@
 import data from './data.js'
 
 new Vue({
-    el: "#lovexhj",
+    el: "#resume",
     data: {
-        lovexhj: data, // 网站文案数据
+        resume: data, // 网站文案数据
         projectDialog: false, // 项目演示窗口打开
         projectIndex: 0, // 当前展示项目索引
     },
     mounted() {
-        // console.log(this.lovexhj);
+        // console.log(this.resume);
         // 打字开启
         this.startTyping();
         // 动画加载
@@ -17,8 +17,8 @@ new Vue({
     methods: {
         // 打字开启
         startTyping() {
-            new Typed(".lovexhj1Typet", {
-                strings: this.lovexhj.index.me,
+            new Typed(".resume1Typet", {
+                strings: this.resume.index.me,
                 typeSpeed: 30,
                 backDelay: 2000,
                 backSpeed: 50,
@@ -38,13 +38,13 @@ new Vue({
                 [".ContentTitle", 0],
                 [".ContentSubTitle", 500],
                 [".ContentContact", 1000],
-                [".lovexhj1LoadMore", 1500],
-                [".lovexhj2ContentTitle", 0],
-                [".lovexhj2ContentMe", 500],
-                [".lovexhj2ContentText li", 500],
-                [".lovexhj2LoadMore", 1000],
-                [".lovexhj3ContentBox", 500],
-                [".lovexhj4Content li", 500],
+                [".resume1LoadMore", 1500],
+                [".resume2ContentTitle", 0],
+                [".resume2ContentMe", 500],
+                [".resume2ContentText li", 500],
+                [".resume2LoadMore", 1000],
+                [".resume3ContentBox", 500],
+                [".resume4Content li", 500],
             ];
             let a = ScrollReveal();
             animationDom.forEach(item => {
