@@ -205,7 +205,7 @@ export default {
                 name: "信息管理系统",
                 text: "前后端",
                 nb: [
-                    "Vue", "HTML/JS", "Tomcat", "Spring"
+                    "Vue", "HTML/JS", "Tomcat", "Spring Boot"
                 ],
                 url: "about:blank",
                 img: "./images/project6.png",
