@@ -36,9 +36,11 @@ export default {
         laozi: {
             img: "./images/me.jpg",
             content: `<span></span>我是<b>张子杰</b>，18岁，<b>西安交通大学软件工程专业</b>2021级在读学生<br />
-            <span></span>曾获<b>蓝桥杯国赛二等奖</b>，<b>ICPC陕西省赛银奖</b>，<b>全国大学生软件测试大赛二等奖</b>等奖项<br />
+            <span></span>曾获<b>蓝桥杯国赛二等奖</b>，<b>ICPC陕西省赛银奖</b>，<b>全国大学生软件测试大赛二等奖</b>，<b>全国大学生生物医学工程竞赛总决赛二等奖</b>，<b>小米AIoT训练营优秀奖</b>等奖项<br />
+            <span></span>前三学年平均学分成绩<b>86.85</b>，排名约<b>30/157</b>，其中2022-2023学年综测排名<b>12/157</b><br />
+            <span></span>四级成绩<b>637</b>，六级成绩<b>474</b>，CCF-CSP认证成绩<b>365</b>（全国前1.42%）<br />
             <span></span>曾获<b>校级二等奖学金</b>，<b>优秀学生</b>，<b>校网络管理协会优秀社员</b>，<b>校“七星杯”立直麻将竞赛第四名</b>等荣誉。<br />
-            <span></span>前三学年平均学分成绩<b>86.85</b>，排名约<b>30/157</b>，四级成绩<b>637</b>，六级成绩<b>474</b>，CCF-CSP认证成绩<b>365</b>（全国前1.42%）<br />`
+            `
         },
         ability: [{
                 icon: "fa-html5",
@@ -80,7 +82,7 @@ export default {
                 name: "华为实习",
                 text: "鸿蒙软总线",
                 nb: [
-                    "操作系统", "C++", "Linux", "测试", "开发流程"
+                    "操作系统", "C/C++", "ArkTS", "Linux", "测试", "开发流程"
                 ],
                 url: "https://github.com/GrassyUnknown/Health-Life-HarmonyOS-Next",
                 img: "./images/project1.png",
@@ -98,54 +100,32 @@ export default {
                 <p>同时，我还参与到开源鸿蒙和鸿蒙Next操作系统的共建之中，修改代码、提交pr，深刻感受到了代码规范的重要性。</p>`
             },
             {
-                name: "nn",
-                text: "",
+                name: "小米AIoT",
+                text: "单片机开发",
                 nb: [
-                    "Vue", "ElementUI", "MinitUI", "Redis", "SSM", "JAVA", "Mysql"
+                    "C/C++", "Keil", "GD32", "ARM", "I2C"
                 ],
-                url: "",
-                img: "./images/bg.jpg",
+                url: "https://github.com/GrassyUnknown/Xiaomi-AIoT-GD32F450",
+                img: "./images/project2.jpg",
                 content: `<h2>项目类型</h2>
-                <p>练手项目</p>
+                <p>企业活动训练营</p>
                 <h2>开发周期</h2>
-                <p>2020年11月2日 – 2020年12月1日，3人/29天</p>
+                <p>2024年6月 – 2024年6月，3人/29天</p>
                 <h2>开发工具</h2>
                 <p>IDEA、Visual Code、MySQL、Redis、Git、Postman</p>
                 <h2>项目背景</h2>
-                <p>小黑屋商城是一个综合性的B2C平台，类似京东商城、天猫商城。会员可以在商城浏览商品、下订单，以及参加各种活动。管理员、运营可以在平台后台管理系统中管理商品、订单、会员等。</p>
-                <h2>模块介绍</h2>
-                <p>1、	基本：登陆注册、找回密码、验证码；</p>
-                <p>2、	首页：轮播图热点展示、商品分类展示、商品展示；</p>
-                <p>3、	商品详情：图片轮流展示、图片放大镜、商品信息展示、打折与原价展示、添加购物车与购买、评论分类展示、二维码分享、热销展示；</p>
-                <p>4、	购物车：购物车商品展示、数量修改、商品类型修改、批量管理与购买、删除购物车；</p>
-                <p>5、	支付：充值余额、支付宝支付、支付成功/失败展示；</p>
-                <p>6、	用户：个人信息管理、地址选择、订单管理、购物车管理、余额管理；</p>
-                <h2>项目技术</h2>
-                <p>1.	前端分为 PC 与 Mobile 两个客户端，基于 Vue、ElementUI、Mint UI 编写；</p>
-                <p>2.	后端采用 Java、SSM 编写 RESTFul API 风格接口；</p>
-                <p>3.	前端资源全部采用 lazy-load 懒加载，并且存储在阿里云OOS进行调用；</p>
-                <p>4.	图片验证码由后端生成返回Base64并在前端展示，手机验证码则为阿里云短信服务，验证缓存统一放在Redis进行暂存；</p>
-                <p>5.	二维码生成采用 QRCode 根据链接进行生成并压缩；</p>
-                <p>6.	充值系统基于支付宝沙箱程序模拟真实的支付宝支付验证付款等；</p>
-                <p>7.	登录验证采用 JWT 授权，请求需要登录的接口需要提交 Token 才能通过，否则登陆过期；</p>
-                <p>8.	Mobile 端采用瀑布流布局来展示商品；</p>
-                <h2>项目预览</h2>
-                <p>暂无</p>
-                <h2>项目职责</h2>
-                <p>1、前端功能开发、页面设计；</p>
-                <p>2、支付宝支付对接；</p>
-                <p>3、Debug测试并修复；</p>`,
+                `,
             },
             {
-                name: "yy",
-                text: "yyy",
+                name: "IHC图像生成",
+                text: "生医工竞赛",
                 nb: [
-                    "Winform", "SQLServer", "C#"
+                    "Python", "Diffusion Model", "GAN", "U-Net", "深度学习"
                 ],
-                url: "",
-                img: "./images/xcl1.png",
+                url: "https://bme.xjtu.store",
+                img: "./images/project3.png",
                 content: `<h2>项目类型</h2>
-                <p>练手项目</p>
+                <p>竞赛</p>
                 <h2>开发周期</h2>
                 <p>2021年4月2日 – 2021年5月5日，2人/33天</p>
                 <h2>开发工具</h2>
@@ -176,15 +156,15 @@ export default {
                 <p>4、修复测试人员发现的BUG；</p>`,
             },
             {
-                name: "bbb",
-                text: "bbbb",
+                name: "点评大数据",
+                text: "大数据推荐",
                 nb: [
-                    "Gitee Issues", "Vue", "Vue", "Linux", "SEO", "CDN"
+                    "Java Web", "Hadoop", "Hive", "Linux", "Python", "ALS"
                 ],
-                url: "",
-                img: "./images/heng1.png",
+                url: "https://github.com/GrassyUnknown/Review-Bigdata-XJTUSE",
+                img: "./images/project4.png",
                 content: `<h2>项目类型</h2>
-                <p>练手项目</p>
+                <p>实习项目（跟随学院）</p>
                 <h2>开发周期</h2>
                 <p>1人/2天</p>
                 <h2>开发工具</h2>
@@ -211,15 +191,15 @@ export default {
                 </ul>`,
             },
             {
-                name: "erer",
-                text: "rrr",
+                name: "酒店管理系统",
+                text: "前后端",
                 nb: [
-                    "Vue", "Vue", "Linux", "SEO", "CDN"
+                    "Vue", "Spring Boot", "Java", "Mybatis", "项目管理"
                 ],
-                url: "",
-                img: "./images/so.png",
+                url: "https://github.com/GrassyUnknown/Hotelbook-XJTUSE",
+                img: "./images/project5.png",
                 content: `<h2>项目类型</h2>
-                <p>练手项目</p>
+                <p>练手项目（跟随课程）</p>
                 <h2>开发周期</h2>
                 <p>1人/2天</p>
                 <h2>开发工具</h2>
@@ -245,15 +225,15 @@ export default {
                 <p>暂无</p>`,
             },
             {
-                name: "qw",
-                text: "wq",
+                name: "个人信息管理系统",
+                text: "前后端",
                 nb: [
-                    "Vue", "Linux", "SEO", "CDN"
+                    "Vue", "HTML/JS", "Tomcat", "Spring"
                 ],
-                url: "",
-                img: "./images/geek1.png",
+                url: "about:blank",
+                img: "./images/project6.png",
                 content: `<h2>项目类型</h2>
-                <p>官网</p>
+                <p>实习项目（跟随学院）</p>
                 <h2>开发周期</h2>
                 <p>1人/8天</p>
                 <h2>开发工具</h2>
@@ -282,122 +262,6 @@ export default {
                     <li><img src="./images/geek4.png"></li>
                 </ul>`,
             },
-            {
-                name: "poi",
-                text: "oiop",
-                nb: [
-                    "Vue", "Linux", "SEO", "CDN"
-                ],
-                url: "",
-                img: "./images/xxgc1.png",
-                content: `<h2>项目类型</h2>
-                <p>官网</p>
-                <h2>开发周期</h2>
-                <p>1人/4天</p>
-                <h2>开发工具</h2>
-                <p>Visual Code、Git、Postman</p>
-                <h2>项目背景</h2>
-                <p>给好朋友会长做一个计协官网</p>
-                <h2>模块介绍</h2>
-                <p>1、	首页；</p>
-                <p>2、	关于我们；</p>
-                <p>3、	历程发展；</p>
-                <p>4、	计协干部；</p>
-                <p>5、	日常一览；</p>
-                <p>6、	加入我们；</p>
-                <h2>项目技术</h2>
-                <p>1、	前端采用 Vue + ElementUI 制作，后端采用 Node + Mysql 制作；</p>
-                <p>2、	轮播图，轮播图的放大效果动效；</p>
-                <p>3、	关于我们点击文章功能；</p>
-                <h2>项目预览</h2>
-                <ul>
-                    <li><img src="./images/xxgc1.png"></li>
-                    <li><img src="./images/xxgc2.png"></li>
-                    <li><img src="./images/xxgc3.png"></li>
-                </ul>`,
-            },
-            {
-                name: "xcv",
-                text: "xxx",
-                nb: [
-                    "HTML", "CSS", "JS", "Vue", "Vue", "Linux", "SEO", "CDN"
-                ],
-                url: "",
-                img: "./images/nuts1.png",
-                content: `<h2>项目类型</h2>
-                <p>练手单页</p>
-                <h2>开发周期</h2>
-                <p>1人/？天</p>
-                <h2>开发工具</h2>
-                <p>Visual Code、Git、Postman</p>
-                <h2>项目背景</h2>
-                <p>个人练手设计作品</p>
-                <h2>项目技术</h2>
-                <p>1、	全端响应式自适应；</p>
-                <p>2、	简约风格，与众不同；</p>
-                <h2>项目预览</h2>
-                <ul>
-                    <li><img src="./images/nuts1.png"></li>
-                    <li><img src="./images/nuts2.png"></li>
-                </ul>`,
-            },
-            {
-                name: "sadsda",
-                text: "",
-                nb: [
-                    "HTML", "CSS", "Js"
-                ],
-                url: "",
-                img: "./images/xhj1.png",
-                content: `<h2>项目类型</h2>
-                <p>练手单页</p>
-                <h2>开发周期</h2>
-                <p>1人/10天</p>
-                <h2>开发工具</h2>
-                <p>Visual Code、Git</p>
-                <h2>项目背景</h2>
-                <p>第一个练手作品</p>
-                <h2>项目技术</h2>
-                <p>1、	全端响应式自适应；</p>
-                <p>2、	简约风格，与众不同；</p>
-                <p>3、	背景视差滚动；</p>
-                <p>4、	打字机效果；</p>
-                <h2>项目预览</h2>
-                <ul>
-                    <li><img src="./images/xhj1.png"></li>
-                    <li><img src="./images/xhj2.png"></li>
-                    <li><img src="./images/xhj3.png"></li>
-                    <li><img src="./images/xhj4.png"></li>
-                </ul>`,
-            },
-            {
-                name: "ooo",
-                text: "oooooo",
-                nb: [
-                    "HTML", "CSS", "Js", "PHP", "Wordpress"
-                ],
-                url: "",
-                img: "./images/no1.png",
-                content: `<h2>项目类型</h2>
-                <p>班级官网</p>
-                <h2>开发周期</h2>
-                <p>1人/4天</p>
-                <h2>开发工具</h2>
-                <p>Visual Code、Git、WordPress</p>
-                <h2>项目背景</h2>
-                <p>给班级做一个官网，基于WordPress实现文章发送等功能</p>
-                <h2>项目技术</h2>
-                <p>1、 全端响应式自适应；</p>
-                <p>2、 简约风格，与众不同；</p>
-                <p>3、 背景视差滚动；</p>
-                <p>4、 打字机效果；</p>
-                <h2>项目预览</h2>
-                <ul>
-                    <li><img src="./images/no1.png"></li>
-                    <li><img src="./images/no2.png"></li>
-                    <li><img src="./images/no3.png"></li>
-                </ul>`,
-            }
         ],
         listLoadMore: "查看",
         loadMore: {
