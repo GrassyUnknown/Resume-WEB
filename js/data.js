@@ -4,7 +4,8 @@ export default {
         me: [
             "张子杰",
             "ZiJie Zhang",
-            "西安交通大学少年班学生"
+            "西交少年班学生",
+            "Github: GrassyUnknown"
         ],
         bg: "./images/bg.jpg",
         subTitle: "深山踏红叶，耳畔闻鹿鸣",
@@ -34,35 +35,38 @@ export default {
         title: "关于我",
         laozi: {
             img: "./images/me.jpg",
-            content: "<span></span>我是<b>张子杰</b>，18岁，<b>西安交通大学软件工程专业</b>2021级在读学生<br /><span></span>曾获<b>蓝桥杯国赛二等奖</b>，<b>ICPC陕西省赛银奖</b>，<b>全国大学生软件测试大赛二等奖</b>等奖项，也曾获得过<b>校级二等奖学金</b>，<b>优秀学生</b>，<b>网络管理协会优秀社员</b>等荣誉。"
+            content: `<span></span>我是<b>张子杰</b>，18岁，<b>西安交通大学软件工程专业</b>2021级在读学生<br />
+            <span></span>曾获<b>蓝桥杯国赛二等奖</b>，<b>ICPC陕西省赛银奖</b>，<b>全国大学生软件测试大赛二等奖</b>等奖项<br />
+            <span></span>曾获<b>校级二等奖学金</b>，<b>优秀学生</b>，<b>校网络管理协会优秀社员</b>，<b>校“七星杯”立直麻将竞赛第四名</b>等荣誉。<br />
+            <span></span>前三学年平均学分成绩<b>86.85</b>，排名约<b>30/157</b>，四级成绩<b>637</b>，六级成绩<b>474</b>，CCF-CSP认证成绩<b>365</b>（全国前1.42%）<br />`
         },
         ability: [{
                 icon: "fa-html5",
                 title: "Java",
-                subTitle: "",
+                subTitle: "Java Web前后端、数据库、面向对象应用程序",
                 color: "#ff4757",
                 bfb: "80%"
             },
             {
                 icon: "fa-code",
-                title: "C++",
-                subTitle: "",
+                title: "C/C++",
+                subTitle: "操作系统底层、单片机开发",
                 color: "#ffa502",
-                bfb: "80%"
+                bfb: "75%"
             },
             {
                 icon: "fa-linux",
-                title: "Linux",
-                subTitle: "",
+                title: "软件开发",
+                subTitle: "软件测试、软件系统分析、软件项目管理",
                 color: "#1e90ff",
-                bfb: "80%"
+                bfb: "85%"
             },
             {
                 icon: "fa-photo",
-                title: "计算机网络",
-                subTitle: "",
+                title: "人工智能",
+                subTitle: "机器学习、深度学习",
                 color: "#2ed573",
-                bfb: "80%"
+                bfb: "50%"
             }
         ],
         loadMore: {
@@ -71,7 +75,7 @@ export default {
         }
     },
     project: {
-        title: "我的项目",
+        title: "项目经历",
         list: [{
                 name: "华为实习",
                 text: "鸿蒙软总线",
@@ -91,7 +95,7 @@ export default {
                 <p>理论学习之后，我们实现了运动健康鸿蒙应用，让我感受到了技术转化为实际产品的乐趣。</p>
                 <p>在部门项目实践阶段，我参与了鸿蒙软总线发现模块的开发与维护。</p>
                 <p>这一过程中，我了解了多种互联技术和规范，通过自主编写代码实现了基于BLE的设备发现并进行测试，见证了设备间无缝互联的神奇。</p>
-                <p>同时，我还参与到开源鸿蒙和鸿蒙Next的共建之中，修改代码、提交pr，深刻感受到了代码规范的重要性。</p>`
+                <p>同时，我还参与到开源鸿蒙和鸿蒙Next操作系统的共建之中，修改代码、提交pr，深刻感受到了代码规范的重要性。</p>`
             },
             {
                 name: "nn",
