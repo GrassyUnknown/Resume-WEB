@@ -202,7 +202,7 @@ export default {
                 `,
             },
             {
-                name: "个人信息管理系统",
+                name: "信息管理系统",
                 text: "前后端",
                 nb: [
                     "Vue", "HTML/JS", "Tomcat", "Spring"
